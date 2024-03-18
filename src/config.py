@@ -1,3 +1,3 @@
 import os
 
-os.environ['TRANSFORMERS_CACHE'] = '/mnt/marzi/hf_cache/'
+t_cach = os.environ['TRANSFORMERS_CACHE','/app/data/hf_cache/']

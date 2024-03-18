@@ -3,8 +3,6 @@ This file gets a txt file as input. The txt file has domain names.
 Example script:
    python ./inference.py --input_dir /Users/marziehbitaab/Desktop/scam_propagation/Ads/saved_pages/09-18-23 --model_dir ../results/model-9-20-23 --output_file "/Users/marziehbitaab/Desktop/scam_propagation/Ads/data/shopping_ads_09-18.txt
 '''
-import os
-os.environ['TRANSFORMERS_CACHE'] = '/mnt/marzi/hf_cache/'
 
 import torch
 import argparse
