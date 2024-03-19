@@ -123,7 +123,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--input_dir", help="directory containing HTML sources")
     parser.add_argument("--input_file", help="file containing urls")
-    parser.add_argument("--model_dir", help="path to the saved model", type=str)
     parser.add_argument("--output_file", help="output file to save the results")
 
     args = parser.parse_args()
