@@ -79,7 +79,6 @@ def whoisxml(domain):
 
 def main(args):
     # load model
-    print(args.model_dir)
     model = LongformerForSequenceClassification.from_pretrained(
         './assets/model-9-20-23',
         gradient_checkpointing=False,
