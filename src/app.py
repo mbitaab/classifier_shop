@@ -116,6 +116,7 @@ def main(args):
             fout.write('%s,%s\n' %(
                 d['URL'], 'shop' if output == 1 else 'nonshop'
             ))
+            print(f"SHOP_CLASSIFIER:{'shop' if output == 1 else 'nonshop'}")
 
 
 if __name__ == '__main__':
