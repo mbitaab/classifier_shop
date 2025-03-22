@@ -2,14 +2,10 @@ from bs4 import BeautifulSoup
 import bs4
 from torch.utils.data import Dataset
 import pickle
-import json
 import os
-import torch
 from tqdm import tqdm
 from urllib.parse import urlparse
-from transformers import LongformerTokenizerFast, LongformerForSequenceClassification, Trainer, TrainingArguments, LongformerConfig
-import random
-import numpy as np
+from transformers import LongformerTokenizerFast
 from tld import get_fld
 from collections import defaultdict
 import traceback
@@ -159,4 +155,3 @@ class ContentDataset(Dataset):
         text = '\n'.join(chunk for chunk in chunks if chunk)
 
         return text
-

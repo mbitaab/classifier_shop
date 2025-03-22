@@ -9,7 +9,6 @@ import argparse
 import pandas as pd
 from transformers import LongformerTokenizerFast, LongformerForSequenceClassification, LongformerConfig
 from datasets import Dataset
-from tqdm import tqdm
 from dataloader import ContentDataset
 import numpy as np
 import requests
